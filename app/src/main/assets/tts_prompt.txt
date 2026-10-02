@@ -1,0 +1,13 @@
+# Gemini TTS delivery configuration (read by TtsManager).
+# Gemini 3.8 TTS treats the text as a verbatim transcript, so delivery instructions must NOT be
+# placed in the spoken text. They go into speech_metadata.style. Keep each style short.
+# Lines starting with '#' are comments. The "voice" can also be overridden in Settings.
+
+voice=Kore
+
+style.neutral=
+style.joy=warm and pleased
+style.embarrassment=flustered and slightly hurried
+style.pride=confident and a little smug
+style.serious=calm, focused and serious
+style.disgust=unimpressed and deadpan

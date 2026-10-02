@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <TextView
+            style="@style/ConsoleText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/settings_api_key"
+            android:textSize="13sp" />
+        <EditText
+            android:id="@+id/set_api_key"
+            style="@style/ConsoleText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bg_input"
+            android:inputType="textPassword"
+            android:padding="8dp"
+            android:singleLine="true" />
+
+        <TextView
+            style="@style/ConsoleText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="@string/settings_chat_model"
+            android:textSize="13sp" />
+        <EditText
+            android:id="@+id/set_chat_model"
+            style="@style/ConsoleText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bg_input"
+            android:inputType="textNoSuggestions"
+            android:padding="8dp"
+            android:singleLine="true" />
+
+        <TextView
+            style="@style/ConsoleText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="@string/settings_tts_model"
+            android:textSize="13sp" />
+        <EditText
+            android:id="@+id/set_tts_model"
+            style="@style/ConsoleText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bg_input"
+            android:inputType="textNoSuggestions"
+            android:padding="8dp"
+            android:singleLine="true" />
+
+        <TextView
+            style="@style/ConsoleText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="@string/settings_tts_voice"
+            android:textSize="13sp" />
+        <EditText
+            android:id="@+id/set_tts_voice"
+            style="@style/ConsoleText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bg_input"
+            android:inputType="textNoSuggestions"
+            android:padding="8dp"
+            android:singleLine="true" />
+
+        <TextView
+            style="@style/ConsoleText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="@string/settings_turns"
+            android:textSize="13sp" />
+        <EditText
+            android:id="@+id/set_turns"
+            style="@style/ConsoleText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bg_input"
+            android:inputType="number"
+            android:padding="8dp"
+            android:singleLine="true" />
+
+        <TextView
+            style="@style/ConsoleText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="@string/settings_max_record"
+            android:textSize="13sp" />
+        <EditText
+            android:id="@+id/set_max_record"
+            style="@style/ConsoleText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bg_input"
+            android:inputType="number"
+            android:padding="8dp"
+            android:singleLine="true" />
+
+        <TextView
+            style="@style/ConsoleText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="@string/settings_max_reply"
+            android:textSize="13sp" />
+        <EditText
+            android:id="@+id/set_max_reply"
+            style="@style/ConsoleText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bg_input"
+            android:inputType="number"
+            android:padding="8dp"
+            android:singleLine="true" />
+
+        <TextView
+            style="@style/ConsoleText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="@string/settings_anim_speed"
+            android:textSize="13sp" />
+        <EditText
+            android:id="@+id/set_anim_speed"
+            style="@style/ConsoleText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bg_input"
+            android:inputType="number"
+            android:padding="8dp"
+            android:singleLine="true" />
+
+        <TextView
+            android:id="@+id/btn_clear_conversation"
+            style="@style/ConsoleButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="@string/settings_clear_conversation" />
+
+        <TextView
+            android:id="@+id/btn_clear_memory"
+            style="@style/ConsoleButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="@string/settings_clear_memory" />
+    </LinearLayout>
+</ScrollView>

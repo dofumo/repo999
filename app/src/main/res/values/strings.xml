@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Amadeus Companion</string>
+    <string name="status_ready">READY - hold the mic button and speak</string>
+    <string name="status_recording">LISTENING...</string>
+    <string name="status_thinking">THINKING...</string>
+    <string name="status_speaking">SPEAKING</string>
+    <string name="status_no_key">Set your Gemini API key in SETTINGS first</string>
+    <string name="hint_text">Type a message (optional)</string>
+    <string name="btn_send">SEND</string>
+    <string name="btn_settings">SETTINGS</string>
+    <string name="you">YOU</string>
+    <string name="amadeus">AMADEUS</string>
+
+    <string name="settings_title">Settings</string>
+    <string name="settings_api_key">Gemini API key</string>
+    <string name="settings_chat_model">Conversation model</string>
+    <string name="settings_tts_model">TTS model</string>
+    <string name="settings_tts_voice">TTS voice (prebuilt voice name)</string>
+    <string name="settings_turns">Recent conversation turns sent to Gemini</string>
+    <string name="settings_max_record">Maximum recording duration (seconds)</string>
+    <string name="settings_max_reply">Maximum response length (characters)</string>
+    <string name="settings_anim_speed">Talking frame interval (ms, lower = faster)</string>
+    <string name="settings_clear_conversation">Clear recent conversation</string>
+    <string name="settings_clear_memory">Clear long-term memory</string>
+    <string name="settings_save">Save</string>
+    <string name="settings_cancel">Cancel</string>
+    <string name="settings_saved">Settings saved</string>
+    <string name="conversation_cleared">Recent conversation cleared</string>
+    <string name="memory_cleared">Long-term memory cleared</string>
+
+    <string name="err_mic_denied">Microphone permission denied. Use the text box, or grant the permission.</string>
+    <string name="err_mic_unavailable">Microphone is unavailable.</string>
+    <string name="err_empty_recording">Nothing recorded. Hold the button while speaking.</string>
+</resources>

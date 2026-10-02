@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Simple vector launcher icon (no artwork is generated or replaced; this is only a plain shape). -->
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="96dp"
+    android:height="96dp"
+    android:viewportWidth="96"
+    android:viewportHeight="96">
+    <path android:fillColor="#FF0B0B12" android:pathData="M0,0h96v96h-96z" />
+    <path android:fillColor="#FFFF9A3C" android:pathData="M48,18 L74,78 L62,78 L48,44 L34,78 L22,78 Z" />
+</vector>

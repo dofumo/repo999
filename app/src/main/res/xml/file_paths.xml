@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  Reserved for sharing files through a FileProvider. The app itself does not need it:
+  temporary microphone recordings are written to the private cache directory, read back as
+  bytes and deleted immediately after each Gemini request, and nothing is shared with other apps.
+-->
+<paths>
+    <cache-path name="temp_audio" path="." />
+</paths>

@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_dark">
+
+    <!-- sprites/background/background.png (cropped to fill, aspect preserved) -->
+    <ImageView
+        android:id="@+id/background"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:contentDescription="@null"
+        android:scaleType="centerCrop" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal">
+
+        <!-- Left half: the character. Height = full screen, width follows the bitmap's own
+             aspect ratio (adjustViewBounds + fitCenter), so the sprite is never stretched. -->
+        <FrameLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+            <ImageView
+                android:id="@+id/character"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_gravity="center_horizontal|bottom"
+                android:adjustViewBounds="true"
+                android:contentDescription="@null"
+                android:scaleType="fitCenter" />
+
+            <ImageView
+                android:id="@+id/hourglass"
+                android:layout_width="36dp"
+                android:layout_height="50dp"
+                android:layout_gravity="top|center_horizontal"
+                android:layout_marginTop="16dp"
+                android:contentDescription="@null"
+                android:scaleType="fitCenter"
+                android:visibility="gone" />
+        </FrameLayout>
+
+        <!-- Right half: conversation + controls -->
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:padding="16dp">
+
+            <TextView
+                android:id="@+id/status"
+                style="@style/ConsoleText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/bg_panel"
+                android:padding="8dp"
+                android:text="@string/status_ready"
+                android:textColor="@color/text_status"
+                android:textSize="14sp" />
+
+            <ScrollView
+                android:id="@+id/scroll"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_marginBottom="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_weight="1"
+                android:background="@drawable/bg_panel"
+                android:fillViewport="true">
+
+                <TextView
+                    android:id="@+id/conversation"
+                    style="@style/ConsoleText"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:lineSpacingExtra="4dp"
+                    android:padding="12dp"
+                    android:textSize="18sp" />
+            </ScrollView>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <EditText
+                    android:id="@+id/text_input"
+                    style="@style/ConsoleText"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@drawable/bg_input"
+                    android:hint="@string/hint_text"
+                    android:imeOptions="actionSend"
+                    android:inputType="textCapSentences"
+                    android:maxLines="2"
+                    android:padding="10dp"
+                    android:textColorHint="@color/text_status" />
+
+                <TextView
+                    android:id="@+id/send_button"
+                    style="@style/ConsoleButton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="8dp"
+                    android:text="@string/btn_send" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/settings_button"
+                    style="@style/ConsoleButton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/btn_settings" />
+
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="1dp"
+                    android:layout_weight="1" />
+
+                <!-- sprites/buttons/mic_icon.png (set from code) -->
+                <ImageView
+                    android:id="@+id/mic_button"
+                    android:layout_width="88dp"
+                    android:layout_height="88dp"
+                    android:background="@drawable/bg_mic"
+                    android:clickable="true"
+                    android:contentDescription="@string/status_recording"
+                    android:focusable="true"
+                    android:padding="22dp"
+                    android:scaleType="fitCenter" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+</FrameLayout>

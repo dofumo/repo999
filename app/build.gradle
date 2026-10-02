@@ -1,0 +1,38 @@
+plugins {
+    id 'com.android.application'
+}
+
+android {
+    namespace 'com.amadeus.companion'
+    compileSdk 34
+
+    defaultConfig {
+        applicationId 'com.amadeus.companion'
+        minSdk 28
+        targetSdk 34
+        versionCode 1
+        versionName '1.0'
+        // Pure Java app: there are no native libraries, so the same APK runs on
+        // armeabi-v7a (the target RK3288 device) and any other ABI.
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+        }
+    }
+
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+
+    lint {
+        abortOnError false
+    }
+}
+
+// Intentionally no dependencies: only the Android framework (org.json, HttpURLConnection,
+// AudioRecord, AudioTrack, BitmapFactory) is used.
+dependencies {
+}
